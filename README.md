@@ -193,22 +193,17 @@ python edit_config.py --train_dir /home/workspace/data/train/ --eval_dir /home/w
 ```
  - A new config file has been created, `pipeline_new.config`. Move the `pipeline_new.config` to the `/home/workspace/experiments/reference` folder.
 
-Now launch the training process:
 * a training process:
 ```
 python experiments/model_main_tf2.py --model_dir=experiments/reference/ --pipeline_config_path=experiments/reference/pipeline_new.config
 ```
 
-To monitor the training, you can launch a tensorboard instance by running `python -m tensorboard.main --logdir experiments/reference/`. You will report your findings in the writeup.
+ - To monitor the training, you can launch a tensorboard instance by running `python -m tensorboard.main --logdir experiments/reference/`.
 
-Once the training is finished, launch the evaluation process:
 * an evaluation process:
 ```
 python experiments/model_main_tf2.py --model_dir=experiments/reference/ --pipeline_config_path=experiments/reference/pipeline_new.config --checkpoint_dir=experiments/reference/
 ```
-
-**Note**: Both processes will display some Tensorflow warnings, which can be ignored. You may have to kill the evaluation script manually using
-`CTRL+C`.
 
 * Export the trained model:
 ```
