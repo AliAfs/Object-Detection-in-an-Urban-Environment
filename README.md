@@ -218,7 +218,61 @@ python inference_video.py --labelmap_path label_map.pbtxt --model_path experimen
 ```
 ## Training
 #### Reference experiment
-
+The initial experiment did not yield optimal results. However, you can make multiple changes to the config file to improve this model.
 
 #### Improve on the reference
+To improve the model performance, we added multiple augmentations to the config file. 
+As we can see in the images, there are some images taken at night and the environment is dark. Also, there are some images with couldy and foggy climate condition. 
+
+To robust the model against different environmental conditions we added multiple image augmentations. Moreover, we added random black patches to imitate object occlusion uring training proccess. 
+
+Applied aumentations:
+
+```
+  data_augmentation_options {
+     random_horizontal_flip {
+    }
+  }
+  data_augmentation_options {
+     random_crop_image{
+       min_object_covered: 0.0
+       min_aspect_ratio: 0.75
+       max_aspect_ratio: 3.0
+       min_area: 0.75
+       max_area: 1.0
+       overlap_thresh: 0.0ff
+    }
+  }
+  data_augmentation_options {
+     random_adjust_hue{
+        max_delta:0.8
+    }
+  }
+  data_augmentation_options {
+    random_rgb_to_gray{
+     probability:0.3
+    }
+  }
+  data_augmentation_options {
+    random_adjust_brightness{
+     max_delta:0.3
+    }
+  }
+  data_augmentation_options {
+    random_adjust_contrast {
+     min_delta: 0.8
+     max_delta: 1.25
+    }
+  }
+  data_augmentation_options {
+    random_black_patches{
+    }
+  }
+  data_augmentation_options {
+    random_jitter_boxes{
+    }
+  }
+```
 This section should highlight the different strategies you adopted to improve your model. It should contain relevant figures and details of your findings.
+
+![Alt text](/experiment4_training.jpeg "Optional title")
