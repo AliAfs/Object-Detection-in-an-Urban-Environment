@@ -148,7 +148,7 @@ In this project, we are going to use a convolutional neural network to detect an
 ### Set up
 This section should contain a brief description of the steps to follow to run the code for this repository.
 
-#### Edit the config file
+**1. Edit the config file**
 
 The config that we will use for this project is `pipeline.config`, which is the config for a SSD Resnet 50 640x640 model. You can learn more about the Single Shot Detector [here](https://arxiv.org/pdf/1512.02325.pdf).
 
@@ -161,6 +161,7 @@ python edit_config.py --train_dir /home/workspace/data/train/ --eval_dir /home/w
 A new config file has been created, `pipeline_new.config`.
 
 
+To monitor the training, you can launch a tensorboard instance by running `python -m tensorboard.main --logdir experiments/reference/`. You will report your findings in the writeup.
 ### Dataset
 #### Dataset analysis
 This section should contain a quantitative and qualitative description of the dataset. It should include images, charts and other visualizations.
@@ -169,7 +170,20 @@ This section should detail the cross validation strategy and justify your approa
 
 ### Training
 #### Reference experiment
-This section should detail the results of the reference experiment. It should includes training metrics and a detailed explanation of the algorithm's performances.
+
+You will now launch your very first experiment with the Tensorflow object detection API. Move the `pipeline_new.config` to the `/home/workspace/experiments/reference` folder. Now launch the training process:
+* a training process:
+```
+python experiments/model_main_tf2.py --model_dir=experiments/reference/ --pipeline_config_path=experiments/reference/pipeline_new.config
+```
+Once the training is finished, launch the evaluation process:
+* an evaluation process:
+```
+python experiments/model_main_tf2.py --model_dir=experiments/reference/ --pipeline_config_path=experiments/reference/pipeline_new.config --checkpoint_dir=experiments/reference/
+```
+
+**Note**: Both processes will display some Tensorflow warnings, which can be ignored. You may have to kill the evaluation script manually using
+`CTRL+C`.
 
 #### Improve on the reference
 This section should highlight the different strategies you adopted to improve your model. It should contain relevant figures and details of your findings.
