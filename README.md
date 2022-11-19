@@ -296,3 +296,7 @@ Applied aumentations:
 
 
 ![Alt text](/experiment2_loss.jpeg "Optional title")
+
+Here is an example of output detection on one of test data:
+
+![](https://github.com/AliAfs/Object-Detection-in-an-Urban-Environment/blob/main/animation.gif)
