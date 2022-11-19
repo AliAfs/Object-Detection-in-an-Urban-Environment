@@ -274,6 +274,13 @@ Applied aumentations:
     }
   }
 ```
-This section should highlight the different strategies you adopted to improve your model. It should contain relevant figures and details of your findings.
+
+- Here is some the outputs of augmentations on training set:
+
+
+![Alt text](/augmentation1.png "Optional title")
+![Alt text](/augmentation2.png "Optional title")
+![Alt text](/augmentation3.png "Optional title")
+
 
 ![Alt text](/experiment2_loss.jpeg "Optional title")
