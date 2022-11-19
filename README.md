@@ -51,7 +51,11 @@ Image below displays 10 random images from training and validation sets.
 - The right histogram shows that the percentage of images that contains each object. we can see that more than 90% of images contain vehicle, and almost 50% and 10% of them contain pedestrians and cyclist respectively.
 
 ### Cross validation
-This section should detail the cross validation strategy and justify your approach.
+
+We split data to 3 datasets:
+1. Train used in training model
+2. Validation to evaluate
+3. Test to check model performance
 
 ## Steps
 This section contains a brief description of the steps to follow to run the code for this repository.
