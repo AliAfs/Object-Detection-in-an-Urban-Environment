@@ -175,7 +175,19 @@ You are downloading 100 files (unless you changed the `size` parameter) so be pa
 
 ## Dataset
 ### Dataset analysis
-This section should contain a quantitative and qualitative description of the dataset. It should include images, charts and other visualizations.
+
+Image below displays 10 random images from training and validation sets.
+
+<img src="/training-batch.png" alt="drawing" title="10 images from training set" width="900">
+
+<p float="left">
+  <img src="/histogram1.png" width="500" />
+  <img src="/histogram2.png" width="500" /> 
+</p>
+
+- The left histogram shows that the most existed objects are vehicles and then pedestrians and cyclists.
+- The right histogram shows that the percentage of images that contains each object. we can see that more than 90% of images contain vehicle, and almost 50% and 10% of them contain pedestrians and cyclist respectively.
+
 ### Cross validation
 This section should detail the cross validation strategy and justify your approach.
 
