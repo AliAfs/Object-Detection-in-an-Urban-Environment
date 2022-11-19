@@ -308,6 +308,4 @@ The results from improved model are shown below.
 
 Here is an example of output detection on one of test data:
 
-![](animation.gif)
-
-![animation.gif](animation.gif)
+![](animation1.gif)
