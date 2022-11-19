@@ -231,7 +231,10 @@ python inference_video.py --labelmap_path label_map.pbtxt --model_path experimen
 ## Training
 #### Reference experiment
 The initial experiment did not yield optimal results. However, you can make multiple changes to the config file to improve this model.
-![Alt text](/reference_loss.png "Optional title")
+![](/reference_loss.png)
+![](/reference_percision.png)
+![](/reference_recall.png)
+
 
 #### Improve on the reference
 To improve the model performance, we added multiple augmentations to the config file. 
@@ -290,12 +293,12 @@ Applied aumentations:
 - Here is some of the outputs of augmentations on training set:
 
 
-![Alt text](/augmentation1.png "Optional title")
-![Alt text](/augmentation2.png "Optional title")
-![Alt text](/augmentation3.png "Optional title")
+![](/augmentation1.png)
+![](/augmentation2.png)
+![](/augmentation3.png)
 
 
-![Alt text](/experiment2_loss.jpeg "Optional title")
+![](/experiment2_loss.jpeg)
 
 Here is an example of output detection on one of test data:
 
