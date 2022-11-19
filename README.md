@@ -219,6 +219,7 @@ python inference_video.py --labelmap_path label_map.pbtxt --model_path experimen
 ## Training
 #### Reference experiment
 The initial experiment did not yield optimal results. However, you can make multiple changes to the config file to improve this model.
+![Alt text](/reference_loss.png "Optional title")
 
 #### Improve on the reference
 To improve the model performance, we added multiple augmentations to the config file. 
@@ -275,4 +276,4 @@ Applied aumentations:
 ```
 This section should highlight the different strategies you adopted to improve your model. It should contain relevant figures and details of your findings.
 
-![Alt text](/experiment4_training.jpeg "Optional title")
+![Alt text](/experiment2_loss.jpeg "Optional title")
