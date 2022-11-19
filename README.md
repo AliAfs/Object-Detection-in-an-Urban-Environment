@@ -275,7 +275,7 @@ Applied aumentations:
   }
 ```
 
-- Here is some the outputs of augmentations on training set:
+- Here is some of the outputs of augmentations on training set:
 
 
 ![Alt text](/augmentation1.png "Optional title")
