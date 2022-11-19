@@ -1,6 +1,6 @@
 # Object Detection in an Urban Environment
 
-## Submission Template
+## Submission Write-Up
 
 ### Project overview
 Object detection is a computer vision technique that allows us to identify and locate objects in an image or video. Object detection is one of the essential elements to support autonomous driving. For safe and reliable driving, autonomous vehicles rely on their perception of their surroundings. Self-driving cars obtain this perception by using object detection algorithms to make precise determinations of nearby items, such as pedestrians, automobiles, cyclists, etc. 
