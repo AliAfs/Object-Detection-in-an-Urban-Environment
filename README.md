@@ -299,10 +299,6 @@ Applied aumentations:
 
 Here is an example of output detection on one of test data:
 
-![](https://github.com/AliAfs/Object-Detection-in-an-Urban-Environment/animation.gif)
-
-<img align="right" width="100" height="100" src="https://github.com/AliAfs/Object-Detection-in-an-Urban-Environment/blob/main/animation.gif">
-
 ![](animation.gif)
 
 ![animation.gif](animation.gif)
