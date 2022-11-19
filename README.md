@@ -231,6 +231,9 @@ python inference_video.py --labelmap_path label_map.pbtxt --model_path experimen
 ## Training
 #### Reference experiment
 The initial experiment did not yield optimal results. However, you can make multiple changes to the config file to improve this model.
+
+The results of refrence model are shown below.
+
 ![](/reference_loss.png)
 ![](/reference_percision.png)
 ![](/reference_recall.png)
@@ -297,8 +300,11 @@ Applied aumentations:
 ![](/augmentation2.png)
 ![](/augmentation3.png)
 
+The results from improved model are shown below.
 
-![](/experiment2_loss.jpeg)
+![](/experiment1_loss.jpeg)
+![](/experiment1_percision.jpeg)
+![](/experiment1_recall.jpeg)
 
 Here is an example of output detection on one of test data:
 
