@@ -174,4 +174,4 @@ The results from the improved model are shown below. By looking at the results, 
 
 Here is an example of output detection on one of test data:
 
-![](/.animation1.gif)
+![](./animation1.gif)
