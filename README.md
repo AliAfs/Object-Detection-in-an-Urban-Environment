@@ -40,11 +40,11 @@ You are downloading 100 files (unless you changed the `size` parameter) so be pa
 
 Image below displays 10 random images from training and validation sets.
 
-<img src="/training-batch.png" alt="drawing" title="10 images from training set" width="900">
+<img src="./training-batch.png" alt="drawing" title="10 images from training set" width="900">
 
 <p float="left">
-  <img src="/histogram1.png" width="500" />
-  <img src="/histogram2.png" width="500" /> 
+  <img src="./histogram1.png" width="400" />
+  <img src="./histogram2.png" width="400" /> 
 </p>
 
 - The left histogram shows that the most existed objects are vehicles and then pedestrians and cyclists.
@@ -100,9 +100,9 @@ The initial experiment did not yield optimal results. However, you can make mult
 
 The results of refrence model are shown below.
 
-![](/reference_loss.png)
-![](/reference_percision.png)
-![](/reference_recall.png)
+![](./reference_loss.png)
+![](./reference_percision.png)
+![](./reference_recall.png)
 
 
 #### Improve on the reference
@@ -162,16 +162,16 @@ Applied aumentations:
 - Here is some of the outputs of augmentations on training set:
 
 
-![](/augmentation1.png)
-![](/augmentation2.png)
-![](/augmentation3.png)
+![](./augmentation1.png)
+![](./augmentation2.png)
+![](./augmentation3.png)
 
-The results from improved model are shown below.
+The results from improved model are shown below. By looking at the results, we can see the improvement of the model performance. The improved model shows a lower loss both in training and test, as well as higher percision and recall in detecting bounding boxes. 
 
-![](/experiment1_loss.jpeg)
-![](/experiment1_percision.jpeg)
-![](/experiment1_recall.jpeg)
+![](./experiment1_loss.jpeg)
+![](./experiment1_percision.jpeg)
+![](./experiment1_recall.jpeg)
 
 Here is an example of output detection on one of test data:
 
-![](animation1.gif)
+![](/.animation1.gif)
