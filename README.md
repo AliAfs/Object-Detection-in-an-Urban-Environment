@@ -38,7 +38,7 @@ You are downloading 100 files (unless you changed the `size` parameter) so be pa
 ## Dataset
 ### Dataset analysis
 
-Image below displays 10 random images from training and validation sets.
+The image below displays 10 random images from training and validation sets.
 
 <img src="./training-batch.png" alt="drawing" title="10 images from training set" width="900">
 
@@ -47,13 +47,13 @@ Image below displays 10 random images from training and validation sets.
   <img src="./histogram2.png" width="400" /> 
 </p>
 
-- The left histogram shows that the most existed objects are vehicles and then pedestrians and cyclists.
-- The right histogram shows that the percentage of images that contains each object. we can see that more than 90% of images contain vehicle, and almost 50% and 10% of them contain pedestrians and cyclist respectively.
+- The left histogram shows that the most existing objects are vehicles and then pedestrians and cyclists.
+- The right histogram shows the percentage of images that contains each object. we can see that more than 90% of images contain vehicles, and almost 50% and 10% of them contain pedestrians and cyclists respectively.
 
 ### Cross validation
 
-We split data to 3 datasets:
-1. Train used in training model
+We split data into 3 datasets:
+1. Train used in training
 2. Validation to evaluate
 3. Test to check model performance
 
@@ -166,7 +166,7 @@ Applied aumentations:
 ![](./augmentation2.png)
 ![](./augmentation3.png)
 
-The results from improved model are shown below. By looking at the results, we can see the improvement of the model performance. The improved model shows a lower loss both in training and test, as well as higher percision and recall in detecting bounding boxes. 
+The results from the improved model are shown below. By looking at the results, we can see an improvement in the model performance compared to the reference model. The improved model shows a lower loss both in training and test procedure, as well as higher precision and recall in detecting bounding boxes. 
 
 ![](./experiment1_loss.jpeg)
 ![](./experiment1_percision.jpeg)
