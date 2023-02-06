@@ -109,7 +109,7 @@ The results of refrence model are shown below.
 To improve the model performance, we added multiple augmentations to the config file. 
 As we can see in the images, there are some images taken at night and the environment is dark. Also, there are some images with couldy and foggy climate condition. 
 
-To robust the model against different environmental conditions we added multiple image augmentations. Moreover, we added random black patches to imitate object occlusion uring training proccess. 
+To robust the model against different environmental conditions we added multiple image augmentations. Moreover, we added random black patches to imitate object occlusion during training proccess. 
 
 Applied aumentations:
 
