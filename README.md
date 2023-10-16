@@ -1,14 +1,12 @@
 # Object Detection in an Urban Environment
 
-## Submission Write-Up
-
-### Project overview
+## Project Overview
 Object detection is a computer vision technique that allows us to identify and locate objects in an image or video. Object detection is one of the essential elements to support autonomous driving. For safe and reliable driving, autonomous vehicles rely on their perception of their surroundings. Self-driving cars obtain this perception by using object detection algorithms to make precise determinations of nearby items, such as pedestrians, automobiles, cyclists, etc. 
 
 In this project, we are going to use a convolutional neural network to detect and classify different objects in an urban environment.
 The project has been done through an Udacity Nanodegree program. **Main Repository** could be found [here](https://github.com/udacity/nd013-c1-vision-starter).
-## Data
 
+## Data
 For this project, we will be using data from the [Waymo Open dataset](https://waymo.com/open/).
 
 The files can be downloaded directly from the website as tar files or from the [Google Cloud Bucket](https://console.cloud.google.com/storage/browser/waymo_open_dataset_v_1_2_0_individual_files/) as individual tf records.
